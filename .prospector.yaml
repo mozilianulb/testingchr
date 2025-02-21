@@ -4,11 +4,11 @@ test-warnings: true
 doc-warnings: true
 
 pep8:
-  disable: ['C0301']  # Example of disabling a warning
+  disable: ['C0301']
 
 pylint:
-  run: true  # Ensure pylint is running
+  run: true
   options:
     enable:
-      - W0511  # Enable TODO warnings
+      - W0511  # Force-enable TODO warnings
 
