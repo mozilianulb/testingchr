@@ -18,11 +18,15 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install prospector
+          pip install prospector sarif-tools
 
-      - name: Run Prospector and Save SARIF Output
+      - name: Run Prospector and Save JSON Output
         run: |
-          prospector --output-format=sarif > prospector-results.sarif
+          prospector --output-format=json > prospector-results.json
+
+      - name: Convert JSON to SARIF
+        run: |
+          cat prospector-results.json | sarif-tools import prospector > prospector-results.sarif
 
       - name: Upload SARIF File to GitHub
         uses: github/codeql-action/upload-sarif@v2
