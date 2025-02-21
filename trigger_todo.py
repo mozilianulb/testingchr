@@ -1,13 +1,13 @@
-# TODO: Handle error if response is bad (fixme)
+# TODO: Implement proper error handling (fixme)
 def process_data():
-    pass  # Placeholder function that needs implementation
+    pass  # Placeholder function
 
-# TODO: Optimize this loop (fixme)
+# FIXME: Optimize this loop
 for i in range(10):
     print(f"Processing item {i}")
 
 class DataHandler:
-    # TODO: Add proper exception handling (fixme)
+    # TODO: Add exception handling (fixme)
     def handle_data(self, data):
         if data is None:
-            pass  # This should raise an exception 
+            pass  # Should raise an error here
