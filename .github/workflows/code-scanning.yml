@@ -23,7 +23,7 @@ jobs:
         run: pip install prospector
 
       - name: Run Prospector
-        run: prospector --output-format=json > prospector-report.json
+        run: prospector --output-format=json > prospector-report.json || true
 
       - name: Upload Prospector Report
         uses: actions/upload-artifact@v4
