@@ -9,5 +9,5 @@ for i in range(10):
 class DataHandler:
     # TODO: Add exception handling (fixme)
     def handle_data(self, data):
-        if data is None:
+        if data is None: 
             pass  # Should raise an error here
