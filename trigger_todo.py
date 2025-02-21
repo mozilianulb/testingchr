@@ -10,4 +10,4 @@ class DataHandler:
     # TODO: Add proper exception handling (fixme)
     def handle_data(self, data):
         if data is None:
-            pass  # This should raise an exception
+            pass  # This should raise an exception 
